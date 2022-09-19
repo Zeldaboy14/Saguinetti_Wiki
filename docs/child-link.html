@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/child-link by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Oct 2021 17:49:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="images/sites-16.ico" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/sanguinettimods/zelda-modding","deleted":false,"title":"Zelda Modding","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation","deleted":false,"title":"Documentation","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation/zobjs","deleted":false,"title":"ZOBJs","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation/zobjs/child-link","deleted":false,"title":"Child Link","dir":"ltr"}];
+  var JOT_clearDotPath = 'images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":false,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://1385190783-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"SanguinettiMods","experiments":{"enableSubpagesGadgetInTakeout":true,"overrideDisableDomainEditing":false,"DisableSiteEditingFeature__disable_site_editing":true,"disableDomainEditing":true},"jot2atari":{"eligibility":"INELIGIBLE"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"configProperties":{"disableSiteEditing":null},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue=https://sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/child-link&service=jotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/d955fc/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/d955fc/system/js/codemirror.js","images/codemirror_css.css","images/trog_edit__en.js","images/trogedit.css","images/editor.css","images/codeeditor.css","/site/sanguinettimods/_/rsrc/1634800774000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/sanguinettimods","name":"sanguinettimods","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/zelda-modding/documentation/zobjs","parentWuid":"wuid:gx:d87fe2c2d7fd70f","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Child Link","locale":"en","wuid":"wuid:gx:46e1f330d4728205","revision":22,"path":"/zelda-modding/documentation/zobjs/child-link","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"child-link","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false,"isGoogleAdmin":false},"gadgets":{"baseUri":"/site/sanguinettimods/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Child Link - SanguinettiMods" />
+<meta itemprop="name" content="Child Link - SanguinettiMods" />
+<meta property="og:title" content="Child Link - SanguinettiMods" />
+<meta name="description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<meta itemprop="description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<meta id="meta-tag-description" property="og:description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="images/standard-css-slate-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="images/overlayb629.css?cb=slate9a150goog-ws-nav-nosidenone30themedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="images/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/sanguinettimods/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Child Link - SanguinettiMods</title>
+<meta itemprop="image" content="http://i599.photobucket.com/albums/tt76/Piklebag/THELEGENDOFZELDA90CF192C21D60B35C2_ciByRGBA.png" />
+<meta property="og:image" content="http://i599.photobucket.com/albums/tt76/Piklebag/THELEGENDOFZELDA90CF192C21D60B35C2_ciByRGBA.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><h2><a href="index.html" dir="ltr" id="sites-chrome-userheader-title">SanguinettiMods</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://sites.google.com/site/sanguinettimods/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="home.html">Home</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="affiliates.html">Affiliates</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="stream.html">Stream</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="music.html">Music</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="programs.html">Programs</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="3d-models.html">3D Models</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="zelda-modding.html">Zelda Modding</a></li></ul><div style="clear: both;"></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left" style="display: none; width: 150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:45d0038151774474"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="home.html" jotId="wuid:gx:45d0038151774474" class="sites-navigation-link topLevel">Home</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="untitledpost.html" jotId="wuid:gx:67039027a8ec8c87" class="sites-navigation-link">Modshack!</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="3d-models.html" jotId="wuid:gx:241da7a3ce7bf283" class="sites-navigation-link topLevel">3D Models</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="affiliates.html" jotId="wuid:gx:6116f434948d7c25" class="sites-navigation-link topLevel">Affiliates</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="f3dzex-command-notes.html" jotId="wuid:gx:a2ce37bfb5e6aa6" class="sites-navigation-link topLevel">F3DZEX Command Notes</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="majora-s-mask-decompressed-notes.html" jotId="wuid:gx:5bba7f24628d2e64" class="sites-navigation-link topLevel">Majora's Mask Decompressed Notes</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="mmzobjdoc-backup.html" jotId="wuid:gx:638a00bc8db3b32a" class="sites-navigation-link topLevel">MM 1.0 (U) DECOMPRESSED ZOBJ List</a></div></li><li class="topLevel parent " wuid="gx:4394143650c732cc"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="music.html" jotId="wuid:gx:4394143650c732cc" class="sites-navigation-link topLevel">Music</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="orchestrated-remixes.html" jotId="wuid:gx:2b3de8bc4601f862" class="sites-navigation-link">Orchestrated Remixes</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="techno-remixes.html" jotId="wuid:gx:60c2055f4ab7433b" class="sites-navigation-link">Techno Remixes</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="debugzobjdoc-backup.html" jotId="wuid:gx:71cc0521e264f472" class="sites-navigation-link topLevel">OoT Debug ZOBJ List</a></div></li><li class="topLevel parent " wuid="gx:4bfa1d0d5ea41076"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="programs.html" jotId="wuid:gx:4bfa1d0d5ea41076" class="sites-navigation-link topLevel">Programs</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="visual-basic.html" jotId="wuid:gx:3efde3886a455829" class="sites-navigation-link">Visual Basic</a></div></li></ul></li><li class="topLevel parent " wuid="gx:31619abab5b27e93"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="skyward-sword-filesystem.html" jotId="wuid:gx:31619abab5b27e93" class="sites-navigation-link topLevel">Skyward Sword Filesystem</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="riivolution-xml.html" jotId="wuid:gx:38fa39c5625d2f1" class="sites-navigation-link">Riivolution XML</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="stream.html" jotId="wuid:gx:605cc86772d2c244" class="sites-navigation-link topLevel">Stream</a></div></li><li class="topLevel parent " wuid="gx:69ed76862f466d78"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="zelda-modding.html" jotId="wuid:gx:69ed76862f466d78" class="sites-navigation-link topLevel">Zelda Modding</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="codes.html" jotId="wuid:gx:2df700319c1d86b6" class="sites-navigation-link">Codes</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="documentation.html" jotId="wuid:gx:26792ac405c69e48" class="sites-navigation-link">Documentation</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="models.html" jotId="wuid:gx:3642afa854aa9b51" class="sites-navigation-link">Models</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="music-2.html" jotId="wuid:gx:319c89b6a05f1c10" class="sites-navigation-link">Music</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="textures.html" jotId="wuid:gx:65936a2b355ee08d" class="sites-navigation-link">Textures</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="tutorials.html" jotId="wuid:gx:5fad1f47a65c2f71" class="sites-navigation-link">Tutorials</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zelda-programs.html" jotId="wuid:gx:449c9e1e2caeca7d" class="sites-navigation-link">Zelda Programs</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="hierarchy.html" jotId="wuid:gx:5869830d63d905de" class="sites-navigation-link topLevel">Sitemap</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="zelda-modding.html" dir="ltr">Zelda Modding</A>‎ &gt; ‎<A href="documentation.html" dir="ltr">Documentation</A>‎ &gt; ‎<A href="zobjs.html" dir="ltr">ZOBJs</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Child Link</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><font face="Verdana, Helvetica, Arial, sans-serif">
+<div>
+<div>
+<div style="display:block;text-align:left"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Display-List-ID"><strong>1 </strong>Display List ID</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Texture-ID"><strong>1.1 </strong>Texture ID</a></li></ol></li></ol></div></div></div></div></div>
+</div>
+<br />
+</div>
+<div><br />
+</div>
+<div>object_link_child</div>
+<div>Limb Count (hex): 15</div>
+<div>Display Lists: 81</div>
+<div>Debug ROM Offsets: 01014000 - 01040F80</div>
+<div>OoT (U) 1.0 Offsets: 00FBE000 - 00FEAF80</div>
+<div><br />
+</div>
+<h1><a name="TOC-Display-List-ID"></a><font size="2">Display List ID</font></h1>
+<div><br />
+</div>
+<div> &gt; Equipment &lt;</div>
+<div> - Universally Sized</div>
+<div>0x6CC0 (0x6CC0) = Deku Stick</div>
+<div>0x16118 (0x16120) = Goron Bracelet</div>
+<div>0x15540 (0x15540) = Left Hand + Master Sword</div>
+<div><br />
+</div>
+<div> - High Poly</div>
+<div>0x13CB0 (0x13CB0) = Left Hand</div>
+<div>0x13E18 (0x13E18) = Left Fist</div>
+<div>0x13F38 (0x13F38) = Left Fist + Kokiri Sword</div>
+<div>0x141C0 (0x141C0) = Right Hand</div>
+<div>0x14320 (0x14320) = Right Fist</div>
+<div>0x14440 (0x14440) = Right Fist + Deku Shield</div>
+<div>0x14660 (0x14660) = Left Fist + Boomerang</div>
+<div>0x148A8 (0x148A8) = Hylian Shield + Sword + Sheath</div>
+<div>0x14B40 (0x14B40) = Hylian Shield + Sheath</div>
+<div>0x14D68 (0x14D68) = Deku Shield + Sword + Sheath</div>
+<div>0x15010 (0x15010) = Deku Shield + Sheath</div>
+<div>0x15248 (0x15248) = Sword + Sheath</div>
+<div>0x15408 (0x15408) = Sheath</div>
+<div>0x15958 (0x15958) = Right Hand + Ocarina of Time</div>
+<div>0x15BA8 (0x15BA8) = Right Hand + Fairy Ocarina</div>
+<div>0x15DF0 (0x15DF0) = Right Fist + Fairy Slingshot</div>
+<div>0x15FD0 (0x15FD0) = Outstretched Left Hand (used for holding bottles)</div>
+<div><br />
+</div>
+<div> - Low Poly</div>
+<div>0x16280 (0x16280) = Left Hand</div>
+<div>0x163C0 (0x163C0) = Left Fist</div>
+<div>0x164E0 (0x164E0) = Right Hand</div>
+<div>0x16620 (0x16620) = Right Fist</div>
+<div>0x16740 (0x16740) = Right Fist + Deku Shield</div>
+<div>0x16908 (0x16908) = Left Fist + Boomerang</div>
+<div>0x16A98 (0x16A98) = Hylian Shield + Sword + Sheath</div>
+<div>0x16CF8 (0x16CF8) = Hylian Shield + Sheath</div>
+<div>0x16EE8 (0x16EE8) = Deku Shield + Sword + Sheath</div>
+<div>0x17150 (0x17150) = Deku Shield + Sheath</div>
+<div>0x17360 (0x17360) = Sword + Sheath</div>
+<div>0x17500 (0x17500) = Sheath</div>
+<div>0x17630 (0x17630) = Left Fist + Kokiri Sword</div>
+<div>0x178A0 (0x178A0) = Right Hand + Ocarina of Time</div>
+<div>0x17AF0 (0x17AF0) = Right Hand + Fairy Ocarina</div>
+<div>0x17D38 (0x17D38) = Right Hand + Fairy Slingshot</div>
+<div>0x17F00 (0x17F00) = Outstretched Left Hand (used for holding bottles)</div>
+<div> &gt; Hierarchies (Link Parts) &lt;</div>
+<div> - High Poly</div>
+<div>0x202A8 (0x202B0) = Waist</div>
+<div>0x204F0 (0x20528) = Left Thigh</div>
+<div>0x206E8 (0x20720) = Left Shin</div>
+<div>0x20978 (0x209B0) = Left Foot</div>
+<div>0x20AD8 (0x20B10) = Right Thigh</div>
+<div>0x20CD0 (0x20D08) = Right Shin</div>
+<div>0x20F60 (0x20F98) = Right Foot</div>
+<div>0x210C0 (0x210C0) = Shirt Collar</div>
+<div>0x21130 (0x21138) = Torso</div>
+<div>0x21360 (0x21398) = Head</div>
+<div>0x219B0 (0x219E8) = Hat</div>
+<div>0x21AE8 (0x21B20) = Left Shoulder</div>
+<div>0x21CB8 (0x21CF0) = Left Forearm</div>
+<div>0x21E18 (0x21E50) = Right Shoulder</div>
+<div>0x21FE8 (0x22020) = Right Forearm</div>
+<div><br />
+</div>
+<div> - Low Poly</div>
+<div>0x1AEC8 (0x1AED0) = Waist</div>
+<div>0x1B0F8 (0x1B130) = Left Thigh</div>
+<div>0x1B2B8 (0x1B2F0) = Left Shin</div>
+<div>0x1B510 (0x1B548) = Left Foot</div>
+<div>0x1B638 (0x1B670) = Right Thigh</div>
+<div>0x1B7F8 (0x1B830) = Right Shin</div>
+<div>0x1BA50 (0x1BA88) = Right Foot</div>
+<div>0x1BB78 (0x1BB80) = Shirt Collar</div>
+<div>0x1BBD8 (0x1BBE0) = Torso</div>
+<div>0x1BDA0 (0x1BDD8) = Head</div>
+<div>0x1C2A8 (0x1C2E0) = Hat</div>
+<div>0x1C398 (0x1C3D0) = Left Shoulder</div>
+<div>0x1C558 (0x1C590) = Left Forearm</div>
+<div>0x1C688 (0x1C6C0) = Right Shoulder</div>
+<div>0x1C848 (0x1C880) = Right Forearm</div>
+<div> &gt; Other &lt;</div>
+<div>0x18048 (0x18048) = Right Arm + Fairy Slingshot (for first person mode)</div>
+<div>0x18478 (0x18478) = Bottle</div>
+<div>0x18580 (0x18580) = Un-named Object (Boomerang Ruby)</div>
+<div>0x18648 (0x18648) = Bottle</div>
+<div>0x221A8 (0x221A8) = Fairy Slingshot String</div>
+<div>0x224F8 (0x224F8) = Deku Shield (For without a sword or sheath)</div>
+<div>&gt; Masks &lt;</div>
+<div>0x2AD40 (0x2AD48) = Skull Mask</div>
+<div>0x2AF70 (0x2AF78) = Spooky Mask</div>
+<div>0x2B060 (0x2B068) = Keaton Mask</div>
+<div>0x2B1F0 (0x2B1F8) = Mask of Truth</div>
+<div>0x2B350 (0x2B358) = Goron Mask</div>
+<div>0x2B580 (0x2B588) = Zora Mask</div>
+<div>0x2B788 (0x2B790) = Gerudo Mask</div>
+<div>0x2CA38 (0x2CA48) = Bunny Hood</div>
+<div><br />
+</div>
+<div>Documentation by Flotonic. The true offsets are listed with the UoT offsets in parenthesis.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Texture-ID"></a><font size="2">Texture ID</font></h2>
+<div><br />
+</div>
+*Texture
+<div><font color="#e06666">*Palette</font></div>
+<div><font color="#674ea7">*?</font></div>
+<div><br />
+</div>
+<div>Bank 06 = In ZOBJ File</div>
+<div><br />
+</div>
+<div>
+<div></div>
+<div>Offset: 0x000000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Looking Straight)
+<div style="display:block;text-align:left"><a href="thelegendofzelda90cf192c21d60b35c2_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda90cf192c21d60b35c2_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x000800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Half Closed)
+<div style="display:block;text-align:left"><a href="thelegendofzelda90cf192c21f2be5de3_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda90cf192c21f2be5de3_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x001000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Closed)
+<div style="display:block;text-align:left"><a href="thelegendofzelda8fd0172f21bcd7756d_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda8fd0172f21bcd7756d_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x001800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Looking Right)
+<div style="display:block;text-align:left"><a href="thelegendofzelda8ecf172e21f2be5de3_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda8ecf172e21f2be5de3_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x002000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Looking Left)
+<div style="display:block;text-align:left"><a href="thelegendofzelda91d0192d21f2be5de3_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda91d0192d21f2be5de3_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x002800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Surprised)
+<div style="display:block;text-align:left"><a href="thelegendofzelda4bc2e40321d60b35c2_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda4bc2e40321d60b35c2_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x003000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Looking Down)
+<div style="display:block;text-align:left"><a href="00003000_64x32_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="00003000_64x32_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x003800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Eyes (Hurt)
+<div style="display:block;text-align:left"><a href="thelegendofzelda8acf12ea21bcd7756d_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda8acf12ea21bcd7756d_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x004000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Mouth (Closed)
+<div style="display:block;text-align:left"><a href="thelegendofzelda4637496021bcd7756d_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda4637496021bcd7756d_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x004400<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Mouth (Slightly Open, Teeth Show)
+<div style="display:block;text-align:left"><a href="thelegendofzelda992193ab21d60b35c2_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda992193ab21d60b35c2_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x004800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Mouth (Shout)
+<div style="display:block;text-align:left"><a href="thelegendofzelda84410bdc21d60b35c2_cibyrgba.html" imageanchor="1" rel="nofollow"><img border="0" src="thelegendofzelda84410bdc21d60b35c2_cibyrgba.html" /></a></div>
+</div>
+<div>Offset: 0x004C00<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Mouth ("Item Get" Smile)
+<div style="display:block;text-align:left"><a href="00004c00_32x32_ci8-2.html" imageanchor="1" rel="nofollow"><img border="0" src="00004c00_32x32_ci8-2.html" /></a></div>
+</div>
+<div>Offset: 0x005000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Nose 
+<div style="display:block;text-align:left"><a href="01019000_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="01019000_16x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x005200<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0100 - Ear 
+<div style="display:block;text-align:left"><a href="01019200_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="01019200_16x16_ci8.html" /></a></div>
+</div>
+<div><font color="#e06666">Offset: 0x005300<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 </font></div>
+<div><font color="#e06666">Offset: 0x005500<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 </font><font color="#00ff00">This palette is used by his eyes! (As well as other things, but still.)</font></div>
+<div>Offset: 0x005C00<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Kokiri Boots (Foot)
+<div style="display:block;text-align:left"><a href="01019c00_32x32_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="01019c00_32x32_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x006000<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Kokiri Boots (Shin)
+<div style="display:block;text-align:left"><a href="0101a000_32x32_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101a000_32x32_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x006400<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Tunic (Waist)
+<div style="display:block;text-align:left"><a href="0101a400_32x32_i8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101a400_32x32_i8.html" /></a></div>
+</div>
+<div>Offset: 0x006800<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Belt Part (Without Buckle)
+<div style="display:block;text-align:left"><a href="0101a800_8x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101a800_8x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x006880<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Belt (With Buckle)
+<div style="display:block;text-align:left"><a href="0101a880_32x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101a880_32x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x006E08<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Fairy Ocarina
+<div style="display:block;text-align:left"><a href="0101ae08_32x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101ae08_32x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x007208<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Reflection
+<div style="display:block;text-align:left"><a href="0101b208_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101b208_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x007288<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Goron's Bracelet Symbol
+<div style="display:block;text-align:left"><a href="0101b288_16x32_ia16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101b288_16x32_ia16.html" /></a></div>
+</div>
+<div>Offset: 0x007688<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Back of Deku Shield
+<div style="display:block;text-align:left"><a href="0101b688_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101b688_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x007E88<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x1000 - Front of Deku Shield
+<div style="display:block;text-align:left"><a href="0101be88_32x64_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101be88_32x64_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x008E88<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Back of Hylian Shield
+<div style="display:block;text-align:left"><a href="0101ce88_16x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101ce88_16x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x009288<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Slingshot
+<div style="display:block;text-align:left"><a href="0101d288_16x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101d288_16x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x009688<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Thumb
+<div style="display:block;text-align:left"><a href="0101d688_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0101d688_32x32_rgba16.html" /></a></div>
+</div>
+<div><font color="#e06666">Offset: 0x009E88<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080</font></div>
+<div><font color="#e06666">Offset: 0x009F10<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200</font></div>
+<div><font color="#674ea7">Offset: 0x00A118<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200</font></div>
+<div>Offset: 0x00A1F0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0100 - Hand
+<div style="display:block;text-align:left"><a href="0101e1f0_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101e1f0_16x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x00A2F0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0100 - Sheath
+<div style="display:block;text-align:left"><a href="0101e2f0_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101e2f0_16x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x00A3F0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Kokiri Sword Hilt
+<div style="display:block;text-align:left"><a href="0101e3f0_32x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101e3f0_32x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x00A5F0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0100 - Master Sword Handle
+<div style="display:block;text-align:left"><a href="0101e5f0_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101e5f0_16x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x00A6F0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Master Sword Guard
+<div style="display:block;text-align:left"><a href="0101e6f0_32x32_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101e6f0_32x32_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x00AAF0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Master Sword Handle "Gem"
+<div style="display:block;text-align:left"><a href="0101eaf0_16x16_ci8.html" imageanchor="1" rel="nofollow"><img border="0" src="0101eaf0_16x16_ci8.html" /></a></div>
+</div>
+<div>Offset: 0x0226A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x1000 - Spooky Mask
+<div style="display:block;text-align:left"><a href="010366a0_32x64_ia16.html" imageanchor="1" rel="nofollow"><img border="0" src="010366a0_32x64_ia16.html" /></a></div>
+</div>
+<div>Offset: 0x0236A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Keaton Mask (Eye)
+<div style="display:block;text-align:left"><a href="010376a0_32x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="010376a0_32x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x023AA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Keaton Mask (Nose)
+<div style="display:block;text-align:left"><a href="01037aa0_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01037aa0_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x023B20<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Skull Mask (Eye)
+<div style="display:block;text-align:left"><a href="01037b20_16x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01037b20_16x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x023D20<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x1000 - Mask of Truth (Front Half)
+<div style="display:block;text-align:left"><a href="01037d20_32x64_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01037d20_32x64_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x024D20<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Mask of Truth Part
+<div style="display:block;text-align:left"><a href="01038d20_16x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01038d20_16x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x025120<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x1000 - Goron Mask (Mouth)
+<div style="display:block;text-align:left"><a href="01039120_64x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01039120_64x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026120<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Goron Mask (Eye)
+<div style="display:block;text-align:left"><a href="0103a120_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103a120_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026920<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Goron Mask (Ear?)
+<div style="display:block;text-align:left"><a href="0103a920_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103a920_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x0269A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Goron Mask (Hair)
+<div style="display:block;text-align:left"><a href="0103a9a0_16x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103a9a0_16x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026BA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Part of Skull Mask (Ears)
+<div style="display:block;text-align:left"><a href="0103aba0_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103aba0_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026C20<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Part of Goron Mask
+<div style="display:block;text-align:left"><a href="0103ac20_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103ac20_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026CA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Zora Mask (Fill)
+<div style="display:block;text-align:left"><a href="0103aca0_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103aca0_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x026D20<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Zora Mask (Fin)
+<div style="display:block;text-align:left"><a href="0103ad20_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103ad20_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x027520<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Part of Skull Mask (Nose)
+<div style="display:block;text-align:left"><a href="0103b520_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103b520_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x0275A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Zora Mask (Eye)
+<div style="display:block;text-align:left"><a href="0103b5a0_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103b5a0_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x027DA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Zora Mask (Mouth)
+<div style="display:block;text-align:left"><a href="0103bda0_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103bda0_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x0285A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0800 - Gerudo Mask (Eye)
+<div style="display:block;text-align:left"><a href="0103c5a0_32x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103c5a0_32x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x028DA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Gerudo Mask (Wrap?)
+<div style="display:block;text-align:left"><a href="0103cda0_16x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103cda0_16x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x028FA0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Gerudo Mask (Hair)
+<div style="display:block;text-align:left"><a href="0103cfa0_16x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103cfa0_16x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x0291A0<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0080 - Gerudo Mask (Skin)
+<div style="display:block;text-align:left"><a href="0103d1a0_8x8_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103d1a0_8x8_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x02BA28<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0200 - Bunny Hood (Eye)
+<div style="display:block;text-align:left"><a href="0103fa28_16x16_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103fa28_16x16_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x02BC28<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Bunny Hood (Fill)
+<div style="display:block;text-align:left"><a href="0103fc28_16x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="0103fc28_16x32_rgba16.html" /></a></div>
+</div>
+<div>Offset: 0x02C028<span style="white-space:pre"> </span>Bank: 06<span style="white-space:pre"> </span>Length: 0x0400 - Bunny Hood (Ear)
+<div style="display:block;text-align:left"><a href="01040028_16x32_rgba16.html" imageanchor="1" rel="nofollow"><img border="0" src="01040028_16x32_rgba16.html" /></a></div>
+</div>
+</div>
+</font></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/child-link&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="reportabuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="images/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">if (webspace.editorResources['text']) {webspace.editorResources['text'].unshift('#\/site\/sanguinettimods\/system\/app\/css\/overlay.css?cb\x3dslate9a150goog-ws-nav-nosidenone30themedefaultstandard');webspace.editorResources['text'].unshift('#\/site\/sanguinettimods\/_\/rsrc\/1634800774000\/system\/app\/themes\/slate\/standard-css-slate-ltr-ltr.css');}</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[{"action":"/site/sanguinettimods/system/app/pages/search","id":"search-site","label":"Search this site"}]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/site/sanguinettimods/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", true);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvcOPJbPRyitr27PJuqbPG4QOaqzNiv71JyLtz4QPI1V5hzBkPBOShiW_7dioyHkA-51POAJHbs2dbAzOChdnKlstfepVshyDUKKiPQQud_A9Ps61PagSHvKw9MJWNBXJSMyFjZ/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/child-link by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Oct 2021 17:49:24 GMT -->
+</html>

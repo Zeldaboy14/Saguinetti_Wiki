@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/gerudo-guard by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Oct 2021 17:49:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="images/sites-16.ico" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/sanguinettimods/zelda-modding","deleted":false,"title":"Zelda Modding","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation","deleted":false,"title":"Documentation","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation/zobjs","deleted":false,"title":"ZOBJs","dir":"ltr"},{"path":"/site/sanguinettimods/zelda-modding/documentation/zobjs/gerudo-guard","deleted":false,"title":"Gerudo Guard","dir":"ltr"}];
+  var JOT_clearDotPath = 'images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":false,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://2117881520-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"SanguinettiMods","experiments":{"enableSubpagesGadgetInTakeout":true,"overrideDisableDomainEditing":false,"DisableSiteEditingFeature__disable_site_editing":true,"disableDomainEditing":true},"jot2atari":{"eligibility":"INELIGIBLE"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"configProperties":{"disableSiteEditing":null},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue=https://sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/gerudo-guard&service=jotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/d955fc/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/d955fc/system/js/codemirror.js","images/codemirror_css.css","images/trog_edit__en.js","images/trogedit.css","images/editor.css","images/codeeditor.css","/site/sanguinettimods/_/rsrc/1634800774000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/sanguinettimods","name":"sanguinettimods","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/zelda-modding/documentation/zobjs","parentWuid":"wuid:gx:d87fe2c2d7fd70f","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Gerudo Guard","locale":"en","wuid":"wuid:gx:369d2255752da12b","revision":2,"path":"/zelda-modding/documentation/zobjs/gerudo-guard","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"gerudo-guard","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false,"isGoogleAdmin":false},"gadgets":{"baseUri":"/site/sanguinettimods/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Gerudo Guard - SanguinettiMods" />
+<meta itemprop="name" content="Gerudo Guard - SanguinettiMods" />
+<meta property="og:title" content="Gerudo Guard - SanguinettiMods" />
+<meta name="description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<meta itemprop="description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<meta id="meta-tag-description" property="og:description" content="Weeeeeeeeeeeeeeeeeeee!" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="images/standard-css-slate-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="images/overlayb629.css?cb=slate9a150goog-ws-nav-nosidenone30themedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="images/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/sanguinettimods/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Gerudo Guard - SanguinettiMods</title>
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><h2><a href="index.html" dir="ltr" id="sites-chrome-userheader-title">SanguinettiMods</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://sites.google.com/site/sanguinettimods/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="home.html">Home</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="affiliates.html">Affiliates</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="stream.html">Stream</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="music.html">Music</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="programs.html">Programs</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="3d-models.html">3D Models</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="zelda-modding.html">Zelda Modding</a></li></ul><div style="clear: both;"></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left" style="display: none; width: 150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:45d0038151774474"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="home.html" jotId="wuid:gx:45d0038151774474" class="sites-navigation-link topLevel">Home</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="untitledpost.html" jotId="wuid:gx:67039027a8ec8c87" class="sites-navigation-link">Modshack!</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="3d-models.html" jotId="wuid:gx:241da7a3ce7bf283" class="sites-navigation-link topLevel">3D Models</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="affiliates.html" jotId="wuid:gx:6116f434948d7c25" class="sites-navigation-link topLevel">Affiliates</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="f3dzex-command-notes.html" jotId="wuid:gx:a2ce37bfb5e6aa6" class="sites-navigation-link topLevel">F3DZEX Command Notes</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="majora-s-mask-decompressed-notes.html" jotId="wuid:gx:5bba7f24628d2e64" class="sites-navigation-link topLevel">Majora's Mask Decompressed Notes</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="mmzobjdoc-backup.html" jotId="wuid:gx:638a00bc8db3b32a" class="sites-navigation-link topLevel">MM 1.0 (U) DECOMPRESSED ZOBJ List</a></div></li><li class="topLevel parent " wuid="gx:4394143650c732cc"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="music.html" jotId="wuid:gx:4394143650c732cc" class="sites-navigation-link topLevel">Music</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="orchestrated-remixes.html" jotId="wuid:gx:2b3de8bc4601f862" class="sites-navigation-link">Orchestrated Remixes</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="techno-remixes.html" jotId="wuid:gx:60c2055f4ab7433b" class="sites-navigation-link">Techno Remixes</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="debugzobjdoc-backup.html" jotId="wuid:gx:71cc0521e264f472" class="sites-navigation-link topLevel">OoT Debug ZOBJ List</a></div></li><li class="topLevel parent " wuid="gx:4bfa1d0d5ea41076"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="programs.html" jotId="wuid:gx:4bfa1d0d5ea41076" class="sites-navigation-link topLevel">Programs</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="visual-basic.html" jotId="wuid:gx:3efde3886a455829" class="sites-navigation-link">Visual Basic</a></div></li></ul></li><li class="topLevel parent " wuid="gx:31619abab5b27e93"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="skyward-sword-filesystem.html" jotId="wuid:gx:31619abab5b27e93" class="sites-navigation-link topLevel">Skyward Sword Filesystem</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="riivolution-xml.html" jotId="wuid:gx:38fa39c5625d2f1" class="sites-navigation-link">Riivolution XML</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="stream.html" jotId="wuid:gx:605cc86772d2c244" class="sites-navigation-link topLevel">Stream</a></div></li><li class="topLevel parent " wuid="gx:69ed76862f466d78"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="zelda-modding.html" jotId="wuid:gx:69ed76862f466d78" class="sites-navigation-link topLevel">Zelda Modding</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="codes.html" jotId="wuid:gx:2df700319c1d86b6" class="sites-navigation-link">Codes</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="documentation.html" jotId="wuid:gx:26792ac405c69e48" class="sites-navigation-link">Documentation</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="models.html" jotId="wuid:gx:3642afa854aa9b51" class="sites-navigation-link">Models</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="music-2.html" jotId="wuid:gx:319c89b6a05f1c10" class="sites-navigation-link">Music</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="textures.html" jotId="wuid:gx:65936a2b355ee08d" class="sites-navigation-link">Textures</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="tutorials.html" jotId="wuid:gx:5fad1f47a65c2f71" class="sites-navigation-link">Tutorials</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="zelda-programs.html" jotId="wuid:gx:449c9e1e2caeca7d" class="sites-navigation-link">Zelda Programs</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="hierarchy.html" jotId="wuid:gx:5869830d63d905de" class="sites-navigation-link topLevel">Sitemap</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="zelda-modding.html" dir="ltr">Zelda Modding</A>‎ &gt; ‎<A href="documentation.html" dir="ltr">Documentation</A>‎ &gt; ‎<A href="zobjs.html" dir="ltr">ZOBJs</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Gerudo Guard</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Display-List-ID"><strong>1 </strong>Display List ID</a></li></ol></div></div></div></div></div>
+<br />
+</div>
+<div><br />
+</div>
+<div>
+<div>
+<div>
+<div><div>object_ge1</div><div>Limb Count (hex): 0F</div><div>Display Lists: 18</div><div>Debug ROM Offsets: 01746000 - 017504B0</div><div>OoT (U) 1.0 Offsets: 016E4000 - 016E4000</div></div><div></div>
+</div>
+<div></div>
+</div>
+<div></div>
+</div>
+<div></div>
+<div><br />
+</div>
+<h1><a name="TOC-Display-List-ID"></a><font size="2">Display List ID</font></h1>
+<div><br />
+</div>
+<div>
+<div>
+<div>
+<div><div>0x5608 = Torso</div><div>0x5C38 = Face</div><div>0x6040 = Left Shoulder</div><div>0x61E8 = Left Forearm</div><div>0x6318 = Left Hand</div><div>0x6510 = Right Shoulder</div><div>0x66B8 = Right Forearm</div><div>0x67E8 = Right Hand</div><div>0x69E0 = Waist</div><div>0x6AD0 = Left Thigh</div><div>0x6C00 = Left Shin</div><div>0x6E50 = Left Foot</div><div>0x70B0 = Right Thigh</div><div>0x71E0 = Right Shin</div><div>0x73A8 = Right Foot</div><div>0x9198 = Hair (Normal)</div><div>0x9430 = Hair (Long)</div><div>0x9690 = Hair (Spiky)</div></div><div></div>
+</div>
+<div></div>
+</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>Documentation by SanguinettiMods. All offsets are correct.</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/gerudo-guard&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="reportabuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="images/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">if (webspace.editorResources['text']) {webspace.editorResources['text'].unshift('#\/site\/sanguinettimods\/system\/app\/css\/overlay.css?cb\x3dslate9a150goog-ws-nav-nosidenone30themedefaultstandard');webspace.editorResources['text'].unshift('#\/site\/sanguinettimods\/_\/rsrc\/1634800774000\/system\/app\/themes\/slate\/standard-css-slate-ltr-ltr.css');}</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[{"action":"/site/sanguinettimods/system/app/pages/search","id":"search-site","label":"Search this site"}]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/site/sanguinettimods/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", true);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvcOPJbPRyitr27PJuqbPG4QOaqzNiv71JyLtz4QPI1Vz3O2FtIJDH5h2GosAOIiSRVcH57S2sm0J9dtmGqwa4tTG0ewVFWVqEzOIkiAROgOabyVNRg9gquUvpOGBuTTPURpuUm/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/sanguinettimods/zelda-modding/documentation/zobjs/gerudo-guard by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 Oct 2021 17:49:29 GMT -->
+</html>
